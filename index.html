@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <title>Bootstrap, App Landing Page</title>
+    <style>
+      .jumbotron {
+        background-image: url(jumbotron-bg-blue.jpg);
+        text-align: center;
+        margin-top: 50px;
+      }
+      #content {
+        text-align: center;
+      }
+      #appstoreicon {
+        width: 200px;
+      }
+      #download {
+        padding-top: 150px 0 150px 0;
+        background-color: aqua;
+        text-align: center;
+        margin: 20px 0 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Responsive Navbar: A responsive navigation bar that collapses into a three-bar (hamburger) menu on smaller screens. Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">My App</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1">Download my App</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="email"
+            placeholder="email"
+            aria-label="email"
+          />
+          <input
+            class="form-control mr-sm-2"
+            type="password"
+            placeholder="password"
+            aria-label="password"
+          />
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- Responsive Navbar: A responsive navigation bar that collapses into a three-bar (hamburger) menu on smaller screens. Ends -->
+
+    <!-- Jumbotron: A large header section that draws attention to the key message or features of the app.Start -->
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information.
+      </p>
+      <hr class="my-4" />
+      <p>
+        It uses utility classes for typography and spacing to space content out
+        within the larger container.
+      </p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    <!-- Jumbotron: A large header section that draws attention to the key message or features of the app. Ends -->
+
+    <!-- Three-Card Grid Display: A grid of three cards displaying app features or functionalities. Starts-->
+    <div class="container" id="content">
+      <h1>Why This App is Awesome</h1>
+      <p>This app is awesome to use</p>
+    </div>
+
+    <div class="container">
+      <div class="card-deck">
+        <div class="card">
+          <img src="card-image.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="card-image.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="card-image.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Three-Card Grid Display: A grid of three cards displaying app features or functionalities. Ends-->
+    <!-- Footer: A well-designed footer with relevant contact information and useful links. Semantic Tags:  Use semantic tags also Starts -->
+    <div id="download">
+      <h1>Donwload the App</h1>
+      <p>Why SHould I donload the App</p>
+      <p>
+        <a href="#"><img id="appstoreicon" src="appleicon.jpg" alt="" /></a>
+      </p>
+    </div>
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Information -->
+          <section class="col-md-4 mb-3">
+            <h5>Contact Us</h5>
+            <address>
+              1234 Street Name<br />
+              City, State, 56789<br />
+              <a href="tel:+1234567890" class="text-light d-block"
+                >+1 (234) 567-890</a
+              >
+              <a href="mailto:info@example.com" class="text-light"
+                >info@example.com</a
+              >
+            </address>
+          </section>
+
+          <!-- Useful Links -->
+          <nav class="col-md-4 mb-3">
+            <h5>Useful Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#" class="text-light">About</a></li>
+              <li><a href="#" class="text-light">Services</a></li>
+              <li><a href="#" class="text-light">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Social Media or Additional Info -->
+          <section class="col-md-4 mb-3">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-light me-3"
+              ><i class="bi bi-facebook"></i> Facebook</a
+            ><br />
+            <a href="#" class="text-light me-3"
+              ><i class="bi bi-twitter"></i> Twitter</a
+            ><br />
+            <a href="#" class="text-light"
+              ><i class="bi bi-instagram"></i> Instagram</a
+            >
+          </section>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="text-center mt-4">
+          <small>&copy; 2025 Your Company. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer: A well-designed footer with relevant contact information and useful links.Semantic Tags:  Use semantic tags also Ends  -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
